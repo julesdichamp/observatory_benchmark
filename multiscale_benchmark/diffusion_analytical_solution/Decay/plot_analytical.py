@@ -12,7 +12,7 @@ def main() -> None:
     - Over time: concentration over the whole box
     - At stationnary state, 2D plot in plane (x,y,0)
     """
-    parser = argparse.ArgumentParser(description="Plot analytical solution.")
+    parser = argparse.ArgumentParser(description="Plot analytical solution. Note: the 2D stationary state case can run for quite some time due to the high number of concentration computations to perform.")
     parser.add_argument("-p", "--prefix", type=str, default="", help="Filename prefix.")
     parser.add_argument("-D", "--diffusion", type=float, default=2000., help="Diffusion coefficient [µm^2/min].")
     parser.add_argument("--rate", type=float, default=2., help="Uptake rate [1/min].")
